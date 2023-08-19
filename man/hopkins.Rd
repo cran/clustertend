@@ -2,13 +2,7 @@
 % Please edit documentation in R/hopkins.R
 \name{hopkins}
 \alias{hopkins}
-\title{Calculate the Hopkins' statistic
-
-Calculate the Hopkins' statistic of given data.
-
-Note:"Package \code{clustertend} is deprecated.  Use package \code{hopkins} instead.
-
-Sample data must be preprocessed into dataframe or matrix form before given as the value of parameter "data".}
+\title{Calculate Hopkins statistic.}
 \usage{
 hopkins(X, n = ceiling(nrow(X)/10))
 }
@@ -21,13 +15,14 @@ hopkins(X, n = ceiling(nrow(X)/10))
 The value returned is actually 1-Hopkins statistic.
 }
 \description{
-Calculate the Hopkins' statistic
+Calculate Hopkins statistic of given data.
+}
+\details{
+Note: Package \code{clustertend} is deprecated.
+Use package \code{hopkins} instead.
 
-Calculate the Hopkins' statistic of given data.
-
-Note:"Package \code{clustertend} is deprecated.  Use package \code{hopkins} instead.
-
-Sample data must be preprocessed into dataframe or matrix form before given as the value of parameter "data".
+Sample data must be preprocessed into dataframe or matrix form before
+given as the value of parameter "data".
 }
 \examples{
 set.seed(1)
@@ -40,5 +35,5 @@ New index for clustering tendency and its application to chemical problems.
 Journal of Chemical Information and Computer Sciences. 30(1):36-41.
 }
 \author{
-Luo YiLan, Zeng RuTong.
+Kevin Wright, Luo YiLan, Zeng RuTong.
 }

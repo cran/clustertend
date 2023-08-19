@@ -6,13 +6,15 @@
 
 ## ---------------------------------------------------------------------------
 
-#' @title Calculate the Hopkins' statistic
+#' Calculate Hopkins statistic.
 #'
-#' Calculate the Hopkins' statistic of given data.
+#' Calculate Hopkins statistic of given data.
 #'
-#' Note:"Package \code{clustertend} is deprecated.  Use package \code{hopkins} instead.
-#' 
-#' Sample data must be preprocessed into dataframe or matrix form before given as the value of parameter "data".
+#' Note: Package \code{clustertend} is deprecated.
+#' Use package \code{hopkins} instead.
+#'
+#' Sample data must be preprocessed into dataframe or matrix form before
+#' given as the value of parameter "data".
 #'
 #' @param X Data (matrix or data.frame) to check clusterability.
 #' 
@@ -20,9 +22,9 @@
 #' 
 #' @return The value returned is actually 1-Hopkins statistic.
 #' 
-#' @author Luo YiLan, Zeng RuTong.
+#' @author Kevin Wright, Luo YiLan, Zeng RuTong.
 #' 
-#' @examples
+#' @examples 
 #' set.seed(1)
 #' hopkins(iris[,-5], n=15)
 #' 
@@ -80,4 +82,3 @@ hopkins <- function(X,n=ceiling(nrow(X)/10)) {
   list(H=(sum(minq)/(sum(minp)+sum(minq))))
   
 }
-
